@@ -1,0 +1,98 @@
+\hypertarget{class_scene}{}\section{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scene_aa722c9492bc4be765c6d8db718d52f1c}\label{class_scene_aa722c9492bc4be765c6d8db718d52f1c}} 
+{\bfseries Scene} (\mbox{\hyperlink{class_camera}{Camera}} c, vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$$>$ s, \mbox{\hyperlink{class_ray3f}{Ray3f}} r)
+\item 
+\mbox{\Hypertarget{class_scene_a6d0a3d4d98ee8c259109cdc14e7c5408}\label{class_scene_a6d0a3d4d98ee8c259109cdc14e7c5408}} 
+\mbox{\hyperlink{class_camera}{Camera}} \mbox{\hyperlink{class_scene_a6d0a3d4d98ee8c259109cdc14e7c5408}{get\+Camera}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene}{Scene}} getter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a04fdbafba14bf53aa5e6a4a492bc7a03}\label{class_scene_a04fdbafba14bf53aa5e6a4a492bc7a03}} 
+vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ {\bfseries get\+Shapes} () const
+\item 
+\mbox{\Hypertarget{class_scene_a242762e0cf02fc62e90b8c2f65c833c5}\label{class_scene_a242762e0cf02fc62e90b8c2f65c833c5}} 
+\mbox{\hyperlink{class_ray3f}{Ray3f}} {\bfseries get\+Source} () const
+\item 
+void \mbox{\hyperlink{class_scene_a8cc1bb60246aa6e3d8c41d1780d09f7e}{save}} (const char $\ast$filename, int w, int h, int dpi, \mbox{\hyperlink{class_material}{Material}} $\ast$couleur)
+\item 
+\mbox{\hyperlink{class_material}{Material}} \mbox{\hyperlink{class_scene_a9403e54c505999db1f88ebc722ebfab1}{get\+Color}} (\mbox{\hyperlink{class_ray3f}{Ray3f}} ray, int object\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Get the color of the intersection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a5fd03877e1c4e302c2229bc86d16a23a}{render}} (int width, int height, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Render the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_a9403e54c505999db1f88ebc722ebfab1}\label{class_scene_a9403e54c505999db1f88ebc722ebfab1}} 
+\index{Scene@{Scene}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_material}{Material}} Scene\+::get\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray3f}{Ray3f}}}]{ray,  }\item[{int}]{object\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Get the color of the intersection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_ray3f}{Ray3f}}} & intercepted \\
+\hline
+{\em object\+\_\+index} & int \\
+\hline
+{\em accuracy} & double \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_material}{Material}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a5fd03877e1c4e302c2229bc86d16a23a}\label{class_scene_a5fd03877e1c4e302c2229bc86d16a23a}} 
+\index{Scene@{Scene}!render@{render}}
+\index{render@{render}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Scene\+::render (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Render the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & char$\ast$ (string) \\
+\hline
+{\em width} & int \\
+\hline
+{\em height} & int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a8cc1bb60246aa6e3d8c41d1780d09f7e}\label{class_scene_a8cc1bb60246aa6e3d8c41d1780d09f7e}} 
+\index{Scene@{Scene}!save@{save}}
+\index{save@{save}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Scene\+::save (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{dpi,  }\item[{\mbox{\hyperlink{class_material}{Material}} $\ast$}]{couleur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & char$\ast$ (string) \\
+\hline
+{\em width} & int \\
+\hline
+{\em height} & int \\
+\hline
+{\em dpi} & int \\
+\hline
+{\em data} & Material$\ast$ a table that contains the color of the pixels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void but saves a png file 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Scene.\+h\item 
+Scene.\+cpp\end{DoxyCompactItemize}

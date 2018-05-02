@@ -1,0 +1,164 @@
+\hypertarget{class_cube_quad}{}\section{Cube\+Quad Class Reference}
+\label{class_cube_quad}\index{Cube\+Quad@{Cube\+Quad}}
+Inheritance diagram for Cube\+Quad\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cube_quad}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cube_quad_a3fa4c62ac49699d72d1a8c8fdca2f2cb}{Cube\+Quad}} (\mbox{\hyperlink{class_material}{Material}} m, \mbox{\hyperlink{class_vector3f}{Vector3f}} origin, \mbox{\hyperlink{class_vector3f}{Vector3f}} width, \mbox{\hyperlink{class_vector3f}{Vector3f}} height)
+\item 
+\mbox{\hyperlink{class_vector3f}{Vector3f}} \mbox{\hyperlink{class_cube_quad_abe8372c7f59cd9ff9a5a668fcd437a76}{get\+Origin}} () const
+\item 
+\mbox{\hyperlink{class_vector3f}{Vector3f}} \mbox{\hyperlink{class_cube_quad_a7229846a07dc9f641d16a488da740a49}{get\+Width}} () const
+\item 
+\mbox{\hyperlink{class_vector3f}{Vector3f}} \mbox{\hyperlink{class_cube_quad_adfb45d0ba7d9fce02b6ee82a7872262f}{get\+Height}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_cube_quad_a8d55228ceeed7ce319bc6d8fe8f6b67f}{is\+\_\+hit}} (\mbox{\hyperlink{class_ray3f}{Ray3f}} \&ray)
+\begin{DoxyCompactList}\small\item\em Find if there\textquotesingle{}s an intersection between an object and a ray. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ray3f}{Ray3f}} \mbox{\hyperlink{class_cube_quad_a18ef5943f0cfd8b9b72950211691314a}{reflect}} (\mbox{\hyperlink{class_ray3f}{Ray3f}} ray)
+\begin{DoxyCompactList}\small\item\em Give the reflection ray of another ray that hit an object. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_cube_quad_a3b51f8216f2ba340174edb542af33c0a}{Intersection}} (\mbox{\hyperlink{class_ray3f}{Ray3f}} ray)
+\begin{DoxyCompactList}\small\item\em Find the intersection position between an object and a ray. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_vector3f}{Vector3f}} \mbox{\hyperlink{class_cube_quad_aba1f984ce9580e2e430ace0137a0f249}{get\+Normal}} (\mbox{\hyperlink{class_vector3f}{Vector3f}} position)
+\begin{DoxyCompactList}\small\item\em Find the normal vector of an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cube_quad_a3fa4c62ac49699d72d1a8c8fdca2f2cb}\label{class_cube_quad_a3fa4c62ac49699d72d1a8c8fdca2f2cb}} 
+\index{Cube\+Quad@{Cube\+Quad}!Cube\+Quad@{Cube\+Quad}}
+\index{Cube\+Quad@{Cube\+Quad}!Cube\+Quad@{Cube\+Quad}}
+\subsubsection{\texorpdfstring{Cube\+Quad()}{CubeQuad()}}
+{\footnotesize\ttfamily Cube\+Quad\+::\+Cube\+Quad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_material}{Material}}}]{m,  }\item[{\mbox{\hyperlink{class_vector3f}{Vector3f}}}]{origin,  }\item[{\mbox{\hyperlink{class_vector3f}{Vector3f}}}]{width,  }\item[{\mbox{\hyperlink{class_vector3f}{Vector3f}}}]{height }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_cube_quad}{Cube\+Quad}} \+: New instance of \mbox{\hyperlink{class_cube_quad}{Cube\+Quad}} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cube_quad_adfb45d0ba7d9fce02b6ee82a7872262f}\label{class_cube_quad_adfb45d0ba7d9fce02b6ee82a7872262f}} 
+\index{Cube\+Quad@{Cube\+Quad}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Cube\+Quad@{Cube\+Quad}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3f}{Vector3f}} Cube\+Quad\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_vector3f}{Vector3f}} \+: The Height of the Cube quad intercepted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cube_quad_aba1f984ce9580e2e430ace0137a0f249}\label{class_cube_quad_aba1f984ce9580e2e430ace0137a0f249}} 
+\index{Cube\+Quad@{Cube\+Quad}!get\+Normal@{get\+Normal}}
+\index{get\+Normal@{get\+Normal}!Cube\+Quad@{Cube\+Quad}}
+\subsubsection{\texorpdfstring{get\+Normal()}{getNormal()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_vector3f}{Vector3f}} Cube\+Quad\+::get\+Normal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3f}{Vector3f}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Find the normal vector of an object. 
+
+give the normal vector from a position 
+\begin{DoxyParams}{Parameters}
+{\em ray} & \mbox{\hyperlink{class_vector3f}{Vector3f}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_vector3f}{Vector3f}}\+: the normal vector 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_afba80076ff9eb95f7e7c4144e323590f}{Shape}}.
+
+\mbox{\Hypertarget{class_cube_quad_abe8372c7f59cd9ff9a5a668fcd437a76}\label{class_cube_quad_abe8372c7f59cd9ff9a5a668fcd437a76}} 
+\index{Cube\+Quad@{Cube\+Quad}!get\+Origin@{get\+Origin}}
+\index{get\+Origin@{get\+Origin}!Cube\+Quad@{Cube\+Quad}}
+\subsubsection{\texorpdfstring{get\+Origin()}{getOrigin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3f}{Vector3f}} Cube\+Quad\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_vector3f}{Vector3f}} \+: The origin of the cube quad 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cube_quad_a7229846a07dc9f641d16a488da740a49}\label{class_cube_quad_a7229846a07dc9f641d16a488da740a49}} 
+\index{Cube\+Quad@{Cube\+Quad}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Cube\+Quad@{Cube\+Quad}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3f}{Vector3f}} Cube\+Quad\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_vector3f}{Vector3f}} \+: The Width of the Cube quad intercepted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cube_quad_a3b51f8216f2ba340174edb542af33c0a}\label{class_cube_quad_a3b51f8216f2ba340174edb542af33c0a}} 
+\index{Cube\+Quad@{Cube\+Quad}!Intersection@{Intersection}}
+\index{Intersection@{Intersection}!Cube\+Quad@{Cube\+Quad}}
+\subsubsection{\texorpdfstring{Intersection()}{Intersection()}}
+{\footnotesize\ttfamily double Cube\+Quad\+::\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray3f}{Ray3f}}}]{ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Find the intersection position between an object and a ray. 
+
+give the intersection position if there\textquotesingle{}s an intersection return -\/1 if there\textquotesingle{}s no intersection 
+\begin{DoxyParams}{Parameters}
+{\em ray} & \mbox{\hyperlink{class_ray3f}{Ray3f}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double the distance from our ray origin to the point of intersection return -\/1 if there\textquotesingle{}s no intersection 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_aae1d31ff6fb4237397bf11afd07d7e48}{Shape}}.
+
+\mbox{\Hypertarget{class_cube_quad_a8d55228ceeed7ce319bc6d8fe8f6b67f}\label{class_cube_quad_a8d55228ceeed7ce319bc6d8fe8f6b67f}} 
+\index{Cube\+Quad@{Cube\+Quad}!is\+\_\+hit@{is\+\_\+hit}}
+\index{is\+\_\+hit@{is\+\_\+hit}!Cube\+Quad@{Cube\+Quad}}
+\subsubsection{\texorpdfstring{is\+\_\+hit()}{is\_hit()}}
+{\footnotesize\ttfamily bool Cube\+Quad\+::is\+\_\+hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray3f}{Ray3f}} \&}]{ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Find if there\textquotesingle{}s an intersection between an object and a ray. 
+
+Find if there\textquotesingle{}s an intersection between an object and a ray and give intersect of ray3f\+: the value of the distance from ray\textquotesingle{}s origin to the point of intersection 
+\begin{DoxyParams}{Parameters}
+{\em ray} & \mbox{\hyperlink{class_ray3f}{Ray3f}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if we have intersection 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_ab443b81b74cfb1d248d23cc049da7ddd}{Shape}}.
+
+\mbox{\Hypertarget{class_cube_quad_a18ef5943f0cfd8b9b72950211691314a}\label{class_cube_quad_a18ef5943f0cfd8b9b72950211691314a}} 
+\index{Cube\+Quad@{Cube\+Quad}!reflect@{reflect}}
+\index{reflect@{reflect}!Cube\+Quad@{Cube\+Quad}}
+\subsubsection{\texorpdfstring{reflect()}{reflect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ray3f}{Ray3f}} Cube\+Quad\+::reflect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ray3f}{Ray3f}}}]{ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Give the reflection ray of another ray that hit an object. 
+
+Give the reflection ray from the intersection position 
+\begin{DoxyParams}{Parameters}
+{\em ray} & \mbox{\hyperlink{class_ray3f}{Ray3f}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_ray3f}{Ray3f}} \+: the reflected ray 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_a7cc30a4c8e9564c51f6ab36554aa5cfc}{Shape}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cube\+Quad.\+h\item 
+Cube\+Quad.\+cpp\end{DoxyCompactItemize}
